@@ -1,0 +1,23 @@
+This directory is a vendored copy of NVIDIA RULER
+    https://github.com/NVIDIA/RULER
+at upstream commit c3f5e3b, redistributed under the Apache License 2.0
+(see LICENSE in this directory).
+
+THIS COPY HAS BEEN MODIFIED. As required by Apache-2.0 section 4(b):
+
+  13 upstream files modified (+520 / -23) and 19 task files added.
+  The complete, itemised list of changes -- with rationale for each -- is in
+  the parent directory:
+
+      ../RULER_CHANGES.md      prose description of every change
+      (see "Reproducing the diff" in RULER_CHANGES.md to diff against upstream)
+
+  In summary: removed the nemo-toolkit dependency, added environment-variable
+  overrides so jobs can be sharded, fixed a crash in variable_tracking.py for
+  num_hops>4 / num_chains>1, added difficulty sweeps and a confusable-key
+  factorial (--key_mode in niah.py), and added an optional flash-attention
+  hook for the EdenQiao checkpoints' attention sink.
+
+NOT INCLUDED: scripts/data/synthetic/json/hotpotqa.json (59 MB), needed only
+for the qa_2 task. Run ../fetch_ruler_data.sh to retrieve it. Note that the
+CMU URL hardcoded in upstream RULER is dead; use the HuggingFace mirror.

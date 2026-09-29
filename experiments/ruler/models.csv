@@ -1,0 +1,7 @@
+model,seq_len
+edenqiao-full-16k,16384
+edenqiao-swa-16k,16384
+edenqiao-swa-nope-16k,16384
+edenqiao-full-32k,32768
+edenqiao-swa-32k,32768
+edenqiao-swa-nope-32k,32768

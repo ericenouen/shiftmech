@@ -1,0 +1,27 @@
+torch==2.9.1
+transformers==5.15.0
+accelerate==1.12.0
+sentencepiece==0.2.1
+pyvene==0.1.8
+datasets==4.4.1
+networkx==3.6
+numpy==2.3.5
+pandas==2.3.3
+scipy==1.16.3
+scikit-learn==1.7.2
+matplotlib==3.10.7
+seaborn==0.13.2
+tabulate==0.10.0
+tensorboard==2.20.0
+click==8.4.1
+tqdm==4.67.1
+
+# RULER
+pyyaml==6.0.3
+nltk==3.9.2
+wonderwords==3.0.1
+tenacity==9.1.2
+requests==2.32.5
+
+# prebuilt for Python 3.12, torch 2.9, CUDA 12, Linux x86_64
+flash-attn @ https://github.com/Dao-AILab/flash-attention/releases/download/v2.8.3/flash_attn-2.8.3+cu12torch2.9cxx11abiTRUE-cp312-cp312-linux_x86_64.whl
